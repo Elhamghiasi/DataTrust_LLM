@@ -1,0 +1,23 @@
+{
+  "chi_square": 169.69369321852872,
+  "degrees_of_freedom": 5,
+  "p_value": 8.481155879232322e-35,
+  "cramers_v": 0.5318108893496646,
+  "risk_ratio_vs_clean": {
+    "clean": 1.0,
+    "contradictory": 16.0,
+    "duplicate_noise": 3.666666666666667,
+    "irrelevant": 3.666666666666667,
+    "missing": 12.0,
+    "no_context": 24.0
+  },
+  "logistic_regression_odds_ratios": {
+    "Intercept": 0.03092783505154636,
+    "C(condition, Treatment(reference='clean'))[T.contradictory]": 29.84615384615388,
+    "C(condition, Treatment(reference='clean'))[T.duplicate_noise]": 3.996254681647943,
+    "C(condition, Treatment(reference='clean'))[T.irrelevant]": 3.996254681647944,
+    "C(condition, Treatment(reference='clean'))[T.missing]": 18.187500000000025,
+    "C(condition, Treatment(reference='clean'))[T.no_context]": 83.14285714285724
+  },
+  "interpretation_rule": "p < 0.05 indicates evidence of association; Cramer's V describes effect size."
+}

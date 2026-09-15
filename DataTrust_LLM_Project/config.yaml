@@ -1,0 +1,30 @@
+project:
+  seed: 42
+  questions_path: data/raw/questions.csv
+  results_path: data/processed/results.csv
+  outputs_dir: outputs
+
+experiment:
+  provider: mock
+  model: deterministic-demo-v1
+  sample_size: 100
+  temperature: 0.0
+  max_tokens: 120
+  conditions:
+    - clean
+    - missing
+    - irrelevant
+    - duplicate_noise
+    - contradictory
+    - no_context
+
+evaluation:
+  abstention_phrases:
+    - insufficient information
+    - cannot determine
+    - not provided
+    - do not know
+    - don't know
+    - unable to answer
+  bootstrap_iterations: 2000
+  confidence_level: 0.95
